@@ -1,0 +1,95 @@
+GENERAL FORMAT
+protein prep
+Split by chain (for maestro, don't need in script)
+Mutate residue
+	Merge mutated peptide with minimized protein
+	Side chain predictions
+	Monte carlo on mutated residue, return 6 structures
+		split chains to run MMGBSA for binding affinity
+
+DOWNLOAD PDB file: $SCHRODINGER/utilities/getpdb 1tp5
+
+PROTEIN PREP
+-import 1tp5.pdb into maestro
+-protein prep wizard, don't need waters because peptide interactions don't involve them, so delete all waters 0A from het groups (ligand)
+-two missing atoms, add missing side chains
+-refine tab, optimize then minimize
+-right click on entry, split by chain
+-select each individually and export to 1tp5prepA (protein) and B (ligand)
+
+#split by chain DON'T NEED THIS ANYMORE
+# duplicate in place is just right clicking on entry, not sure if it uses 
+#a command or just make a new variable. Duplicator class?
+# structure has a chain iterator! 
+# for cahin in st.chain:   or     chain = st.chain[letter] ("B")
+# if len(st.chain) == 6, it's the ligand
+#print len(protein.chain )
+#ligand = protein.chain["B"]
+
+ATOM REFERENCES
+def get_ca(res):
+	for at in res.atom:
+		print at.pdbname
+ 		if at.pdbname == " CA ":
+ 			return at
+
+for res in ligand.residue:
+	native = native + res.getCode() 
+	zero = res._getResnum() # C-terminal (0th) residue is the last in sequence
+
+RESULTS
+find the peptide scores in the JMolModel2011 whatever paper from the "reminder" blitz
+thread with spaller
+
+SOLVED PROBLEMS
+1) weird error sometimes when mutating the last residue in seq, something
+goes wrong with the atom iterator and it says atom index out of range
+
+2) watch out for build.mutate, it appeared that the residues in the original
+ligand were getting changed, and some of the mutations are incorrect
+KKETWV -> KKESEL
+K ->  K
+K ->  K
+E ->  E
+T ->  62  S
+W ->  76  V
+E ->  100  L
+K K E S L V
+---solved because ligand.residue is a dynamic list, and as the residues were mutating,
+the atom numbers were changing in the ligand so build.mutate was operating on the wrong
+residues---
+
+RUNNING MMGBSA
+$SCHRODINGER/prime_mmgbsa -h (for help)
+ex) $SCHRODINGER/prime_mmgbsa test.maegz -ligand m.n\ 1 -job_type SIDE_PRED -report_full
+use options:
+(ligand ASL (ASL is found with AslLigandSearcher))
+(out_type LIGAND (this doesn't really matter, just gives the ligand in the output file))
+(could use -rflexdist to make residues close to the ligand flexible)
+-job_type SIDE_PRED
+-report_full
+(can constrain parts of ligand with -lcons or -rcons)
+(can score with -watermap but need an input watermap file)
+(can divide jobs into subjobs with NJOBS)
+
+FROM GOOGLE DOC
+load structure from pdb - 6 other identical structures
+split by chain to separate ligand, delete waters (x icon)
+-delete, select, chain, add B (peptide), proximity beyond 5A, residue type HOH
+fill in missing side chain (ala needs to be asp) with protein prep wizard
+-preprocess, panel that shows missing atoms
+-refine tab, optimize and minimize
+N and O in asp can be in either orientation, can hydrogen bond, similar in energy, keep track of both conformations
+split by chain, duplicate in place (ligand) 
+right click atom in residue, mutate residue
+merge mutated peptide with each conformation of minimized protein (flipped asp)
+Side chain predictions - applications, prime, protein refinement, predict side chains
+select mutated residue, sampling algorithm monte carlo, return 6 structures to get samples for binding affinity (searches rotomer library, don’t need to set torsions, minimizes energy)
+split chains to run MMGBSA
+delete 5 extra proteins because they’re all the same (1 chain A, 6 chain Bs)
+include (In column) protein, select ligands (highlighted)
+applications, prime, MMGBSA, take complexes from separated ligand and protein structs, force field OPLS_2005, run
+table, go to far right for dG Bind energy
+
+changing atoms in place - A button on the side, select ex) Cl, click on atom
+mutate residues - methyl button on side, big X to delete atoms, double click H+ to add back hydrogens
