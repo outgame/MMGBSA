@@ -1,0 +1,422 @@
+--------------------------------------------------------------------------------
+
+    Prime MMGBSA v3.000
+
+    
+    Schrodinger Installation: /opt/schrodinger/suites2014-2
+--------------------------------------------------------------------------------
+JobId          : sams-air-3-0-53daab0f
+Name           : test
+Program        : Prime MMGBSA v3.000
+MMshareExec    : /opt/schrodinger/suites2014-2/mmshare-v26017/bin/Darwin-x86_64
+Host           : sams-air-3.wireless.dartmouth.edu
+Dir            : /Users/sam/Desktop/14X/research/running
+HostEntry      : localhost
+JobHost        : sams-air-3.wireless.dartmouth.edu
+JobDir         : /Users/sam/.schrodinger/tmp/test
+JobMMshareExec : /opt/schrodinger/suites2014-2/mmshare-v26017/bin/Darwin-x86_64
+Commandline    : /opt/schrodinger/suites2014-2/prime_mmgbsa test.maegz -report_full
+StartTime      : 2014-07-31-16:46:07
+--------------------------------------------------------------------------------
+    Options Selected: test.maegz -report_full -NJOBS 1 -jobname test
+--------------------------------------------------------------------------------
+
+   Options Passed to Prime   
+   PRIME_TYPE                               REAL_MIN                      
+    ADD_MISSING_SIDE_CHAINS                  no                            
+    ENERGY_BREAKDOWN                         yes                           
+
+
+MMGBSA dG Bind: The binding energy of the receptor and ligand as calculated by 
+         the Prime Energy, a Molecular Mechanics + Implicit Solvent Energy 
+         Function (kcals/mol)
+       = PrimeEnergy(Optimized Complex)
+        - PrimeEnergy(Optimized Free Ligand)
+        - PrimeEnergy(Optimized Free Receptor)
+
+MMGBSA dG Bind(NS):  A version of dG Bind that does not include contributions 
+         from receptor or ligand strain. (kcals/mol)
+       = PrimeEnergy(Optimized Complex)
+        - PrimeEnergy(Ligand Geometry From Optimized Complex)
+        - PrimeEnergy(Receptor Geometry From Optimized Complex)
+
+Lig Strain Energy:  A prediction of the energetic penalty due to strain between
+        the ligand in the complex and the ligand in the free state based on the
+        difference in Prime Energy (kcals/mol).
+      = PrimeEnergy(Ligand Geometry From Optimized Complex)
+       - PrimeEnergy(Optimized Free Ligand)
+
+Rec Strain Energy:  A prediction of the energetic penalty due to strain between
+        the receptor in the complex and the receptor in the free state based on
+        the difference in Prime Energy (kcals/mol).
+      = PrimeEnergy(Receptor Geometry From Optimized Complex)
+       - PrimeEnergy(Optimized Free Receptor)
+
+Created Workflow in   0.044 Minutes
+Running Workflow
+  Final: <KKETDV         (    1) CalcBinding>
+  Final: <KKETDV         (    2) CalcBinding>
+  Final: <KKESEL         (    3) CalcBinding>
+  Final: <KKESEL         (    4) CalcBinding>
+  Final: <KKESEL         (    5) CalcBinding>
+  Final: <KKESEL         (    6) CalcBinding>
+  Final: <KKESEL         (    7) CalcBinding>
+  Final: <KKESEL         (    8) CalcBinding>
+  Final: <KKESEI         (    9) CalcBinding>
+  Final: <KKESEI         (   10) CalcBinding>
+  Final: <KKESEI         (   11) CalcBinding>
+  Final: <KKESEI         (   12) CalcBinding>
+  Final: <KKESEI         (   13) CalcBinding>
+  Final: <KKESEI         (   14) CalcBinding>
+  Final: <KKETGV         (   15) CalcBinding>
+  Final: <KKECEV         (   16) CalcBinding>
+  Final: <KKECEV         (   17) CalcBinding>
+  Final: <KKECEV         (   18) CalcBinding>
+  Final: <KKECEV         (   19) CalcBinding>
+  Final: <KKECEV         (   20) CalcBinding>
+  Final: <KKECEV         (   21) CalcBinding>
+  Final: <KKETET         (   22) CalcBinding>
+  Final: <KKETET         (   23) CalcBinding>
+  Final: <KKETET         (   24) CalcBinding>
+  Final: <KKETET         (   25) CalcBinding>
+  Final: <KKETET         (   26) CalcBinding>
+  Final: <KKETET         (   27) CalcBinding>
+  Final: <KKETPV         (   28) CalcBinding>
+  Final: <KKETEV         (   29) CalcBinding>
+  Final: <KKETEV         (   30) CalcBinding>
+  Final: <KKETEV         (   31) CalcBinding>
+  Final: <KKETEV         (   32) CalcBinding>
+  Final: <KKETEV         (   33) CalcBinding>
+  Final: <KKETEV         (   34) CalcBinding>
+  Final: <KKETEI         (   35) CalcBinding>
+  Final: <KKETEI         (   36) CalcBinding>
+  Final: <KKETEI         (   37) CalcBinding>
+  Final: <KKETEI         (   38) CalcBinding>
+  Final: <KKETEI         (   39) CalcBinding>
+  Final: <KKETEI         (   40) CalcBinding>
+  Final: <KKETEL         (   41) CalcBinding>
+  Final: <KKETEL         (   42) CalcBinding>
+  Final: <KKETEL         (   43) CalcBinding>
+  Final: <KKETEL         (   44) CalcBinding>
+  Final: <KKETEL         (   45) CalcBinding>
+  Final: <KKETEL         (   46) CalcBinding>
+  Final: <KKETEM         (   47) CalcBinding>
+  Final: <KKETEM         (   48) CalcBinding>
+  Final: <KKETEM         (   49) CalcBinding>
+  Final: <KKETEM         (   50) CalcBinding>
+  Final: <KKETEM         (   51) CalcBinding>
+  Final: <KKETEM         (   52) CalcBinding>
+  Final: <KKGTEV         (   53) CalcBinding>
+  Final: <KKGTEV         (   54) CalcBinding>
+  Final: <KKGTEV         (   55) CalcBinding>
+  Final: <KKGTEV         (   56) CalcBinding>
+  Final: <KKGTEV         (   57) CalcBinding>
+  Final: <KKGTEV         (   58) CalcBinding>
+  Final: <KKESEV         (   59) CalcBinding>
+  Final: <KKESEV         (   60) CalcBinding>
+  Final: <KKESEV         (   61) CalcBinding>
+  Final: <KKESEV         (   62) CalcBinding>
+  Final: <KKESEV         (   63) CalcBinding>
+  Final: <KKESEV         (   64) CalcBinding>
+  Final: <KKETVV         (   65) CalcBinding>
+  Final: <KKETVV         (   66) CalcBinding>
+  Final: <KKETKV         (   67) CalcBinding>
+  Final: <KKETKV         (   68) CalcBinding>
+  Final: <KKETKV         (   69) CalcBinding>
+  Final: <KKETKV         (   70) CalcBinding>
+  Final: <KKETKV         (   71) CalcBinding>
+  Final: <KKETKV         (   72) CalcBinding>
+  Final: <KKGTGV         (   73) CalcBinding>
+  Final: <KKDTEV         (   74) CalcBinding>
+  Final: <KKDTEV         (   75) CalcBinding>
+  Final: <KKDTEV         (   76) CalcBinding>
+  Final: <KKDTEV         (   77) CalcBinding>
+  Final: <KKDTEV         (   78) CalcBinding>
+  Final: <KKDTEV         (   79) CalcBinding>
+  Final: <KKETEA         (   80) CalcBinding>
+  Final: <KKETEA         (   81) CalcBinding>
+  Final: <KKETEA         (   82) CalcBinding>
+  Final: <KKETEA         (   83) CalcBinding>
+  Final: <KKETEA         (   84) CalcBinding>
+  Final: <KKETEA         (   85) CalcBinding>
+  Final: <KKETAV         (   86) CalcBinding>
+  Final: <KKATEV         (   87) CalcBinding>
+  Final: <KKATEV         (   88) CalcBinding>
+  Final: <KKATEV         (   89) CalcBinding>
+  Final: <KKATEV         (   90) CalcBinding>
+  Final: <KKATEV         (   91) CalcBinding>
+  Final: <KKATEV         (   92) CalcBinding>
+  Final: <YKETEV         (   93) CalcBinding>
+  Final: <YKETEV         (   94) CalcBinding>
+  Final: <YKETEV         (   95) CalcBinding>
+  Final: <YKETEV         (   96) CalcBinding>
+  Final: <YKETEV         (   97) CalcBinding>
+  Final: <YKETEV         (   98) CalcBinding>
+  Final: <KKETLV         (   99) CalcBinding>
+  Final: <KKETLV         (  100) CalcBinding>
+  Final: <KKETDV         (    1) CalcBinding>
+  Final: <KKETDV         (    2) CalcBinding>
+  Final: <KKESEL         (    3) CalcBinding>
+  Final: <KKESEL         (    4) CalcBinding>
+  Final: <KKESEL         (    5) CalcBinding>
+  Final: <KKESEL         (    6) CalcBinding>
+  Final: <KKESEL         (    7) CalcBinding>
+  Final: <KKESEL         (    8) CalcBinding>
+  Final: <KKESEI         (    9) CalcBinding>
+  Final: <KKESEI         (   10) CalcBinding>
+  Final: <KKESEI         (   11) CalcBinding>
+  Final: <KKESEI         (   12) CalcBinding>
+  Final: <KKESEI         (   13) CalcBinding>
+  Final: <KKESEI         (   14) CalcBinding>
+  Final: <KKETGV         (   15) CalcBinding>
+  Final: <KKECEV         (   16) CalcBinding>
+  Final: <KKECEV         (   17) CalcBinding>
+  Final: <KKECEV         (   18) CalcBinding>
+  Final: <KKECEV         (   19) CalcBinding>
+  Final: <KKECEV         (   20) CalcBinding>
+  Final: <KKECEV         (   21) CalcBinding>
+  Final: <KKETET         (   22) CalcBinding>
+  Final: <KKETET         (   23) CalcBinding>
+  Final: <KKETET         (   24) CalcBinding>
+  Final: <KKETET         (   25) CalcBinding>
+  Final: <KKETET         (   26) CalcBinding>
+  Final: <KKETET         (   27) CalcBinding>
+  Final: <KKETPV         (   28) CalcBinding>
+  Final: <KKETEV         (   29) CalcBinding>
+  Final: <KKETEV         (   30) CalcBinding>
+  Final: <KKETEV         (   31) CalcBinding>
+  Final: <KKETEV         (   32) CalcBinding>
+  Final: <KKETEV         (   33) CalcBinding>
+  Final: <KKETEV         (   34) CalcBinding>
+  Final: <KKETEI         (   35) CalcBinding>
+  Final: <KKETEI         (   36) CalcBinding>
+  Final: <KKETEI         (   37) CalcBinding>
+  Final: <KKETEI         (   38) CalcBinding>
+  Final: <KKETEI         (   39) CalcBinding>
+  Final: <KKETEI         (   40) CalcBinding>
+  Final: <KKETEL         (   41) CalcBinding>
+  Final: <KKETEL         (   42) CalcBinding>
+  Final: <KKETEL         (   43) CalcBinding>
+  Final: <KKETEL         (   44) CalcBinding>
+  Final: <KKETEL         (   45) CalcBinding>
+  Final: <KKETEL         (   46) CalcBinding>
+  Final: <KKETEM         (   47) CalcBinding>
+  Final: <KKETEM         (   48) CalcBinding>
+  Final: <KKETEM         (   49) CalcBinding>
+  Final: <KKETEM         (   50) CalcBinding>
+  Final: <KKETEM         (   51) CalcBinding>
+  Final: <KKETEM         (   52) CalcBinding>
+  Final: <KKGTEV         (   53) CalcBinding>
+  Final: <KKGTEV         (   54) CalcBinding>
+  Final: <KKGTEV         (   55) CalcBinding>
+  Final: <KKGTEV         (   56) CalcBinding>
+  Final: <KKGTEV         (   57) CalcBinding>
+  Final: <KKGTEV         (   58) CalcBinding>
+  Final: <KKESEV         (   59) CalcBinding>
+  Final: <KKESEV         (   60) CalcBinding>
+  Final: <KKESEV         (   61) CalcBinding>
+  Final: <KKESEV         (   62) CalcBinding>
+  Final: <KKESEV         (   63) CalcBinding>
+  Final: <KKESEV         (   64) CalcBinding>
+  Final: <KKETVV         (   65) CalcBinding>
+  Final: <KKETVV         (   66) CalcBinding>
+  Final: <KKETKV         (   67) CalcBinding>
+  Final: <KKETKV         (   68) CalcBinding>
+  Final: <KKETKV         (   69) CalcBinding>
+  Final: <KKETKV         (   70) CalcBinding>
+  Final: <KKETKV         (   71) CalcBinding>
+  Final: <KKETKV         (   72) CalcBinding>
+  Final: <KKGTGV         (   73) CalcBinding>
+  Final: <KKDTEV         (   74) CalcBinding>
+  Final: <KKDTEV         (   75) CalcBinding>
+  Final: <KKDTEV         (   76) CalcBinding>
+  Final: <KKDTEV         (   77) CalcBinding>
+  Final: <KKDTEV         (   78) CalcBinding>
+  Final: <KKDTEV         (   79) CalcBinding>
+  Final: <KKETEA         (   80) CalcBinding>
+  Final: <KKETEA         (   81) CalcBinding>
+  Final: <KKETEA         (   82) CalcBinding>
+  Final: <KKETEA         (   83) CalcBinding>
+  Final: <KKETEA         (   84) CalcBinding>
+  Final: <KKETEA         (   85) CalcBinding>
+  Final: <KKETAV         (   86) CalcBinding>
+  Final: <KKATEV         (   87) CalcBinding>
+  Final: <KKATEV         (   88) CalcBinding>
+  Final: <KKATEV         (   89) CalcBinding>
+  Final: <KKATEV         (   90) CalcBinding>
+  Final: <KKATEV         (   91) CalcBinding>
+  Final: <KKATEV         (   92) CalcBinding>
+  Final: <YKETEV         (   93) CalcBinding>
+  Final: <YKETEV         (   94) CalcBinding>
+  Final: <YKETEV         (   95) CalcBinding>
+  Final: <YKETEV         (   96) CalcBinding>
+  Final: <YKETEV         (   97) CalcBinding>
+  Final: <YKETEV         (   98) CalcBinding>
+  Final: <KKETLV         (   99) CalcBinding>
+  Final: <KKETLV         (  100) CalcBinding>
+  Final: <KKETLV         (  101) CalcBinding>
+  Final: <KKETLV         (  102) CalcBinding>
+  Final: <KKETLV         (  103) CalcBinding>
+  Final: <KKETLV         (  104) CalcBinding>
+  Final: <KKQTEV         (  105) CalcBinding>
+  Final: <KKQTEV         (  106) CalcBinding>
+  Final: <KKQTEV         (  107) CalcBinding>
+  Final: <KKQTEV         (  108) CalcBinding>
+  Final: <KKQTEV         (  109) CalcBinding>
+  Final: <KKQTEV         (  110) CalcBinding>
+  Final: <KKKTEV         (  111) CalcBinding>
+  Final: <KKKTEV         (  112) CalcBinding>
+  Final: <KKKTEV         (  113) CalcBinding>
+  Final: <KKKTEV         (  114) CalcBinding>
+  Final: <KKKTEV         (  115) CalcBinding>
+  Final: <KKKTEV         (  116) CalcBinding>
+  Final: <KKATAV         (  117) CalcBinding>
+  Final: <KKETLV         (  101) CalcBinding>
+  Final: <KKETLV         (  102) CalcBinding>
+  Final: <KKETLV         (  103) CalcBinding>
+  Final: <KKETLV         (  104) CalcBinding>
+  Final: <KKQTEV         (  105) CalcBinding>
+  Final: <KKQTEV         (  106) CalcBinding>
+  Final: <KKQTEV         (  107) CalcBinding>
+  Final: <KKQTEV         (  108) CalcBinding>
+  Final: <KKQTEV         (  109) CalcBinding>
+  Final: <KKQTEV         (  110) CalcBinding>
+  Final: <KKKTEV         (  111) CalcBinding>
+  Final: <KKKTEV         (  112) CalcBinding>
+  Final: <KKKTEV         (  113) CalcBinding>
+  Final: <KKKTEV         (  114) CalcBinding>
+  Final: <KKKTEV         (  115) CalcBinding>
+  Final: <KKKTEV         (  116) CalcBinding>
+  Final: <KKATAV         (  117) CalcBinding>
+All stages completed
+------------ All Outputs ---------------
+title                         ,MMGBSA_dG_Bind,MMGBSA_dG_Bind(NS)
+KKETDV                        ,       -76.366,           -87.806
+KKETDV                        ,       -72.335,           -84.734
+KKESEL                        ,       -79.781,           -92.212
+KKESEL                        ,       -75.917,           -89.648
+KKESEL                        ,       -76.828,           -90.688
+KKESEL                        ,       -82.820,           -92.074
+KKESEL                        ,       -79.140,           -92.944
+KKESEL                        ,       -77.190,           -94.096
+KKESEI                        ,       -81.291,           -94.284
+KKESEI                        ,       -75.492,           -91.110
+KKESEI                        ,       -77.211,           -92.749
+KKESEI                        ,       -72.395,           -88.349
+KKESEI                        ,       -73.404,           -87.871
+KKESEI                        ,       -71.382,           -87.204
+KKETGV                        ,       -76.381,           -87.861
+KKECEV                        ,       -78.073,           -87.831
+KKECEV                        ,       -79.016,           -88.197
+KKECEV                        ,       -75.504,           -84.806
+KKECEV                        ,       -72.782,           -82.885
+KKECEV                        ,       -71.748,           -81.850
+KKECEV                        ,       -74.482,           -88.690
+KKETET                        ,       -71.403,           -86.805
+KKETET                        ,       -64.033,           -79.007
+KKETET                        ,       -63.228,           -78.959
+KKETET                        ,       -74.218,           -88.056
+KKETET                        ,       -69.540,           -84.455
+KKETET                        ,       -65.660,           -79.870
+KKETPV                        ,       -75.608,           -90.998
+KKETEV                        ,       -75.632,           -88.777
+KKETEV                        ,       -79.485,           -92.108
+KKETEV                        ,       -80.033,           -92.487
+KKETEV                        ,       -72.779,           -86.737
+KKETEV                        ,       -74.190,           -86.954
+KKETEV                        ,       -78.275,           -88.742
+KKETEI                        ,       -76.146,           -90.396
+KKETEI                        ,       -71.556,           -84.563
+KKETEI                        ,       -75.977,           -91.298
+KKETEI                        ,       -70.804,           -84.668
+KKETEI                        ,       -71.293,           -89.632
+KKETEI                        ,       -69.023,           -87.460
+KKETEL                        ,       -80.366,           -94.909
+KKETEL                        ,       -77.423,           -91.840
+KKETEL                        ,       -78.308,           -93.429
+KKETEL                        ,       -80.127,           -95.456
+KKETEL                        ,       -73.079,           -88.930
+KKETEL                        ,       -73.538,           -90.665
+KKETEM                        ,       -76.959,           -95.454
+KKETEM                        ,       -78.746,           -95.024
+KKETEM                        ,       -76.905,           -95.562
+KKETEM                        ,       -70.110,           -92.184
+KKETEM                        ,       -75.754,           -93.613
+KKETEM                        ,       -70.572,           -89.747
+KKGTEV                        ,       -79.593,           -90.438
+KKGTEV                        ,       -78.370,           -90.253
+KKGTEV                        ,       -83.980,           -93.984
+KKGTEV                        ,       -83.369,           -93.439
+KKGTEV                        ,       -74.693,           -87.671
+KKGTEV                        ,       -76.063,           -88.179
+KKESEV                        ,       -77.513,           -89.370
+KKESEV                        ,       -71.814,           -85.977
+KKESEV                        ,       -78.390,           -89.617
+KKESEV                        ,       -69.845,           -83.630
+KKESEV                        ,       -71.172,           -83.681
+KKESEV                        ,       -74.727,           -86.411
+KKETVV                        ,       -78.095,           -90.480
+KKETVV                        ,       -79.988,           -91.585
+KKETKV                        ,       -76.836,           -89.062
+KKETKV                        ,       -77.303,           -88.615
+KKETKV                        ,       -77.445,           -89.584
+KKETKV                        ,       -74.995,           -88.341
+KKETKV                        ,       -76.525,           -88.429
+KKETKV                        ,       -76.018,           -88.985
+KKGTGV                        ,       -80.151,           -89.028
+KKDTEV                        ,       -78.641,           -89.651
+KKDTEV                        ,       -82.933,           -92.646
+KKDTEV                        ,       -75.939,           -86.765
+KKDTEV                        ,       -83.166,           -93.127
+KKDTEV                        ,       -76.992,           -87.462
+KKDTEV                        ,       -75.166,           -86.313
+KKETEA                        ,       -64.172,           -80.316
+KKETEA                        ,       -67.379,           -79.929
+KKETEA                        ,       -60.902,           -73.786
+KKETEA                        ,       -56.845,           -68.113
+KKETEA                        ,       -65.086,           -81.151
+KKETEA                        ,       -65.366,           -77.198
+KKETAV                        ,       -77.256,           -88.874
+KKATEV                        ,       -81.772,           -92.935
+KKATEV                        ,       -82.579,           -92.912
+KKATEV                        ,       -86.180,           -96.565
+KKATEV                        ,       -78.188,           -90.044
+KKATEV                        ,       -84.863,           -94.646
+KKATEV                        ,       -79.757,           -90.951
+YKETEV                        ,       -76.869,           -89.332
+YKETEV                        ,       -76.231,           -88.057
+YKETEV                        ,       -70.347,           -83.245
+YKETEV                        ,       -68.855,           -82.023
+YKETEV                        ,       -87.541,          -101.862
+YKETEV                        ,       -78.764,           -96.335
+KKETLV                        ,       -79.368,           -92.106
+KKETLV                        ,       -80.997,           -92.898
+KKETLV                        ,       -79.076,           -92.531
+KKETLV                        ,       -77.917,           -91.493
+KKETLV                        ,       -73.247,           -89.902
+KKETLV                        ,       -78.720,           -89.825
+KKQTEV                        ,       -88.200,          -102.277
+KKQTEV                        ,       -86.213,           -99.439
+KKQTEV                        ,       -85.047,           -99.977
+KKQTEV                        ,       -94.750,          -106.212
+KKQTEV                        ,       -94.070,          -105.463
+KKQTEV                        ,       -85.042,           -99.880
+KKKTEV                        ,       -86.079,           -97.301
+KKKTEV                        ,       -83.713,           -98.246
+KKKTEV                        ,       -83.673,           -96.385
+KKKTEV                        ,       -82.596,           -95.538
+KKKTEV                        ,       -77.511,           -94.189
+KKKTEV                        ,       -81.681,           -94.075
+KKATAV                        ,       -83.022,           -92.797
+------------ Top Outputs ---------------
+title                         ,MMGBSA_dG_Bind,MMGBSA_dG_Bind(NS)
+KKQTEV                        ,       -94.750,          -106.212
+KKQTEV                        ,       -94.070,          -105.463
+KKQTEV                        ,       -88.200,          -102.277
+YKETEV                        ,       -87.541,          -101.862
+KKQTEV                        ,       -86.213,           -99.439
+------------ Averaged Properties -------
+title             ,average
+MMGBSA_dG_Bind    ,-76.666
+MMGBSA_dG_Bind(NS),-89.899
+Total Time Elapsed (hours:minutes:seconds)    1:48:20
